@@ -12,16 +12,3 @@ LoadingComponent.propTypes = {
 };
 
 export default LoadingComponent;
-
-{ /* <Card key={Math.random() * 100}>
-<Card.Img
-  variant='top'
-  alt={`${data.strCategory} thumbnail`}
-  src={data.strCategoryThumb}
-/>
-<Card.Body>
-  <Card.Title>
-     <h4>{ data.strCategory }</h4>
-  </Card.Title>
-</Card.Body>
-</Card> */ }

@@ -5,7 +5,7 @@ import {
 } from 'react-bootstrap';
 import CATEGORIESDATAFETCH from '../redux/categories/categoryActions';
 import LoadingComponent from './LoadingComponent';
-import { truncate } from '../helpers/truncate';
+import truncate from '../helpers/truncate';
 import '../assets/App.css';
 
 function App() {
