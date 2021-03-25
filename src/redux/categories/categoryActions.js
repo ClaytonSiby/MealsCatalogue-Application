@@ -6,7 +6,7 @@ import {
 } from './categoryTypes';
 import ENDPOINTS from '../baseAPIendPoints';
 
-const DATAFETCH = (() => {
+const CATEGORIESDATAFETCH = (() => {
   const fetchCategoriesRequest = () => ({
     type: FETCH_CATEGORIES_REQUEST,
   });
@@ -41,4 +41,4 @@ const DATAFETCH = (() => {
   };
 })();
 
-export default DATAFETCH;
+export default CATEGORIESDATAFETCH;
