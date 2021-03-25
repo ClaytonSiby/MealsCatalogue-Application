@@ -1,11 +1,9 @@
 import React from 'react';
 
-const CategoryDetails = () => {
-    return (
-        <div>
-            CategoryDetails
-        </div>
-    )
-}
+const CategoryDetails = () => (
+  <div>
+    CategoryDetails
+  </div>
+);
 
 export default CategoryDetails;
