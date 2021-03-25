@@ -5,7 +5,7 @@ import foodListReducer from './foodlist/foodlistReducer';
 
 const rootReducer = combineReducers({
   food: foodReducer,
-  categories: categoriesReducer,
+  categoriesData: categoriesReducer,
   foodlist: foodListReducer,
 });
 

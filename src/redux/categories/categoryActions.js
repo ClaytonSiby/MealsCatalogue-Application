@@ -24,7 +24,7 @@ const CATEGORIESDATAFETCH = (() => {
   const fetchCategories = () => (dispatch) => {
     dispatch(fetchCategoriesRequest());
     axios
-      .get(ENDPOINTS.categoriesUrl, { mode: 'cors' })
+      .get(ENDPOINTS.categoriesUrl(), { mode: 'cors' })
       .then((response) => {
         dispatch(fetchCategoriesSuccess(response.data));
       })
