@@ -13,8 +13,7 @@ LoadingComponent.propTypes = {
 
 export default LoadingComponent;
 
-
-{/* <Card key={Math.random() * 100}>
+{ /* <Card key={Math.random() * 100}>
 <Card.Img
   variant='top'
   alt={`${data.strCategory} thumbnail`}
@@ -25,4 +24,4 @@ export default LoadingComponent;
      <h4>{ data.strCategory }</h4>
   </Card.Title>
 </Card.Body>
-</Card> */}
+</Card> */ }
