@@ -1,43 +1,44 @@
+import axios from 'axios';
 import {
   FETCH_CATEGORIES_REQUEST,
   FETCH_CATEGORIES_SUCCESS,
-  FETCH_CATEGORIES_FAILURE
-} from './categoryTypes'
-import ENDPOINTS from '../baseAPIendPoints'
+  FETCH_CATEGORIES_FAILURE,
+} from './categoryTypes';
+import ENDPOINTS from '../baseAPIendPoints';
 
 const DATAFETCH = (() => {
   const fetchCategoriesRequest = () => ({
-    type: FETCH_CATEGORIES_REQUEST
-  })
+    type: FETCH_CATEGORIES_REQUEST,
+  });
 
-  const fetchCategoriesSuccess = categories => ({
+  const fetchCategoriesSuccess = (categories) => ({
     type: FETCH_CATEGORIES_SUCCESS,
-    payload: categories
-  })
+    payload: categories,
+  });
 
-  const fetchCategoriesFailure = message => ({
+  const fetchCategoriesFailure = (message) => ({
     type: FETCH_CATEGORIES_FAILURE,
-    payload: message
-  })
+    payload: message,
+  });
 
-  const fetchCategories = () => dispatch => {
-    dispatch(fetchCategoriesRequest())
+  const fetchCategories = () => (dispatch) => {
+    dispatch(fetchCategoriesRequest());
     axios
       .get(ENDPOINTS.CATEGORIES_URL, { mode: 'cors' })
-      .then(response => {
-        dispatch(fetchCategoriesSuccess(response.data))
+      .then((response) => {
+        dispatch(fetchCategoriesSuccess(response.data));
       })
-      .catch(error => {
-        dispatch(fetchCategoriesFailure(error.message))
-      })
-  }
+      .catch((error) => {
+        dispatch(fetchCategoriesFailure(error.message));
+      });
+  };
 
   return {
     fetchCategoriesRequest,
     fetchCategoriesSuccess,
     fetchCategoriesFailure,
-    fetchCategories
-  }
-})()
+    fetchCategories,
+  };
+})();
 
-export default DATAFETCH
+export default DATAFETCH;
