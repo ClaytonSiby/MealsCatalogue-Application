@@ -30,7 +30,7 @@ const mapDispatchToProps = (dispatch) => ({
 });
 
 FoodDetails.propTypes = {
-  food: PropTypes.objectOf(PropTypes.object()).isRequired,
+  food: PropTypes.instanceOf(Object).isRequired,
   foodRequest: PropTypes.func.isRequired,
   foodId: PropTypes.string.isRequired,
 };
