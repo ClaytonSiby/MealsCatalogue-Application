@@ -3,6 +3,8 @@ import { useSelector, useDispatch } from 'react-redux'
 import FOODLISTDATAFETCH from '../redux/foodlist/foodlistActions'
 import LoadingComponent from './LoadingComponent'
 import { Container, Row, Col, Card } from 'react-bootstrap'
+import { changeFoodId } from '../redux/itemDetailsReducer'
+import truncate from '../helpers/truncate';
 
 const CategoryDetails = () => {
   const dispatch = useDispatch()
@@ -41,9 +43,18 @@ const CategoryDetails = () => {
                     src={`${food.strMealThumb}`}
                   />
                   <Card.Body className='m-0 p-1'>
-                    <p>{food.strMeal}</p>
-                    <button type='button' className='btn btn-block btn-primary'>
-                      Meal Details
+                    <p>{truncate(food.strMeal, 25)}</p>
+                    <button
+                      type='button'
+                      className='btn btn-block btn-primary'
+                      onClick={() => dispatch(changeFoodId(food.idMeal))}
+                    >
+                      <a
+                        href={`\\food\\${food.idMeal}`}
+                        className='text-light'
+                      >
+                        Prepare Meal
+                      </a>
                     </button>
                   </Card.Body>
                 </Card>
