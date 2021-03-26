@@ -5,7 +5,6 @@ import FOODDATAFETCH from '../redux/food/foodActions';
 import LoadingComponent from './LoadingComponent';
 
 const FoodDetails = ({ food, foodId, foodRequest }) => {
-  console.log(foodId);
   const [doneLoading, setDoneLoading] = useState(false);
   useEffect(() => {
     (async () => {
@@ -31,7 +30,7 @@ const mapDispatchToProps = (dispatch) => ({
 });
 
 FoodDetails.propTypes = {
-  food: PropTypes.object.isRequired,
+  food: PropTypes.objectOf(PropTypes.object()).isRequired,
   foodRequest: PropTypes.func.isRequired,
   foodId: PropTypes.string.isRequired,
 };
