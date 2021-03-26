@@ -8,7 +8,7 @@ const rootReducer = combineReducers({
   food: foodReducer,
   categoriesData: categoriesReducer,
   foodlist: foodListReducer,
-  itemDetails: itemDetailsReducer
+  itemDetails: itemDetailsReducer,
 });
 
 export default rootReducer;

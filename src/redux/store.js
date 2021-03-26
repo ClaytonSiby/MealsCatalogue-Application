@@ -4,31 +4,30 @@ import thunk from 'redux-thunk';
 import logger from 'redux-logger';
 import rootReducer from './rootReducer';
 
-const saveToLocalStorage = state => {
+const saveToLocalStorage = (state) => {
   try {
     const serialisedState = JSON.stringify(state);
-    localStorage.setItem('applicationData', serialisedState);
+    return localStorage.setItem('applicationData', serialisedState);
   } catch (error) {
-    console.warn(error)
+    return error;
   }
-}
+};
 
 const loadAppData = () => {
   try {
     const serialisedState = localStorage.getItem('applicationData');
-    if(serialisedState === null) return undefined;
+    if (serialisedState === null) return undefined;
     return JSON.parse(serialisedState);
-  } catch(error) {
-    console.warn(error)
-    return undefined
+  } catch (error) {
+    return error;
   }
-}
+};
 
 const store = createStore(
   rootReducer, loadAppData(),
   composeWithDevTools(applyMiddleware(thunk, logger)),
 );
 
-store.subscribe(() => saveToLocalStorage(store.getState()))
+store.subscribe(() => saveToLocalStorage(store.getState()));
 
 export default store;
