@@ -3,7 +3,6 @@ import { useEffect, useState } from 'react';
 import {
   Container, Row, Col, Card,
 } from 'react-bootstrap';
-import Button from '@material-ui/core/Button';
 import CATEGORIESDATAFETCH from '../redux/categories/categoryActions';
 import { changeCategoryName } from '../redux/itemDetailsReducer';
 import LoadingComponent from './LoadingComponent';
@@ -57,15 +56,15 @@ function App() {
                     <Card.Title>{data.strCategory}</Card.Title>
 
                     <p>{truncate(data.strCategoryDescription, 73)}</p>
-                    <Button
-                      variant="contained"
-                      color="secondary"
+                    <button
+                      type="button"
+                      className="btn btn-block btn-primary"
                       onClick={() => changeDataName(data.strCategory)}
                     >
-                      <a href={`\\categories\\${data.strCategory}`}>
+                      <a href={`\\categories\\${data.strCategory}`} className="text-light">
                         View Details
                       </a>
-                    </Button>
+                    </button>
                   </Card.Body>
                 </Card>
               </Col>
