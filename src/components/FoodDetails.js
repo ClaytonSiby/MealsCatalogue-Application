@@ -58,7 +58,7 @@ const FoodDetails = ({ food, foodId, foodRequest }) => {
                         <p className="ItemCategory">
                           Category:
                           {' '}
-                          <i className="text-primary">{strItem.strCategory}</i>
+                          <i className="text-info">{strItem.strCategory}</i>
                         </p>
                         <p className="ItemCountry">
                           Origins:
@@ -68,8 +68,8 @@ const FoodDetails = ({ food, foodId, foodRequest }) => {
                         <p className="SourLink">
                           Source:
                           {' '}
-                          <i className="text-info">
-                            <a href={`${strItem.strSource}`}>visit website</a>
+                          <i>
+                            <a href={`${strItem.strSource}`} className="text-info">visit website</a>
                           </i>
                         </p>
                       </div>

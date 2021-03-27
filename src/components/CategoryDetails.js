@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import {
-  Container, Row, Col, Card, Button
+  Container, Row, Col, Card, Button,
 } from 'react-bootstrap';
 import FOODLISTDATAFETCH from '../redux/foodlist/foodlistActions';
 import LoadingComponent from './LoadingComponent';

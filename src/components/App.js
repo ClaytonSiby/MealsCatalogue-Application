@@ -1,7 +1,7 @@
 import { useSelector, useDispatch } from 'react-redux';
 import { useEffect, useState } from 'react';
 import {
-  Container, Row, Col, Card, Button
+  Container, Row, Col, Card, Button,
 } from 'react-bootstrap';
 import CATEGORIESDATAFETCH from '../redux/categories/categoryActions';
 import { changeCategoryName } from '../redux/itemDetailsReducer';
@@ -58,7 +58,7 @@ function App() {
                     <p>{truncate(data.strCategoryDescription, 73)}</p>
                     <Button
                       type="button"
-                      variant='outline-info'
+                      variant="outline-info"
                       className="btn btn-block"
                       onClick={() => changeDataName(data.strCategory)}
                     >

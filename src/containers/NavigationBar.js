@@ -1,34 +1,109 @@
-import React from 'react'
-import { Navbar, Nav, NavDropdown, Form, FormControl, Button } from 'react-bootstrap'
+import React from 'react';
+import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
+import { useDispatch } from 'react-redux';
+import { changeCategoryName } from '../redux/itemDetailsReducer';
 
 const NavigationBar = () => {
+  const dispatch = useDispatch();
   return (
-    <Navbar sticky="top" bg='dark' expand='lg' className="my-3" variant="dark">
-      <Navbar.Brand href='#home' className="text-info">SIBYMeals</Navbar.Brand>
-      <Navbar.Toggle aria-controls='basic-navbar-nav' />
-      <Navbar.Collapse id='basic-navbar-nav'>
-        <Nav className='mr-auto'>
-          <Nav.Link href='#home'>Home</Nav.Link>
-          <Nav.Link href='#link'>Link</Nav.Link>
-          <NavDropdown title='Dropdown' id='basic-nav-dropdown'>
-            <NavDropdown.Item href='#action/3.1'>Action</NavDropdown.Item>
-            <NavDropdown.Item href='#action/3.2'>
-              Another action
+    <Navbar sticky="top" bg="dark" expand="lg" className="my-3" variant="dark">
+      <Navbar.Brand href="/" className="text-info">
+        SIBYMeals
+      </Navbar.Brand>
+      <Navbar.Toggle aria-controls="basic-navbar-nav" />
+      <Navbar.Collapse id="basic-navbar-nav">
+        <Nav className="mr-auto">
+          <Nav.Link
+            onClick={() => dispatch(changeCategoryName('Breakfast'))}
+            href={'\\categories\\Breakfast'}
+          >
+            Breakfast
+          </Nav.Link>
+          <Nav.Link
+            onClick={() => dispatch(changeCategoryName('Dessert'))}
+            href={'\\categories\\Dessert'}
+          >
+            Dessert
+          </Nav.Link>
+          <Nav.Link
+            onClick={() => dispatch(changeCategoryName('Starter'))}
+            href={'\\categories\\Starter'}
+          >
+            Starter
+          </Nav.Link>
+          <Nav.Link
+            onClick={() => dispatch(changeCategoryName('Pasta'))}
+            href={'\\categories\\Pasta'}
+          >
+            Pasta
+          </Nav.Link>
+          <NavDropdown title="Filter by Category" id="basic-nav-dropdown">
+            <NavDropdown.Item
+              onClick={() => dispatch(changeCategoryName('Beef'))}
+              href={'\\categories\\Beef'}
+            >
+              Beef
             </NavDropdown.Item>
-            <NavDropdown.Item href='#action/3.3'>Something</NavDropdown.Item>
-            <NavDropdown.Divider />
-            <NavDropdown.Item href='#action/3.4'>
-              Separated link
+            <NavDropdown.Item
+              onClick={() => dispatch(changeCategoryName('Chicken'))}
+              href={'\\categories\\Chicken'}
+            >
+              Chicken
+            </NavDropdown.Item>
+            <NavDropdown.Item
+              onClick={() => dispatch(changeCategoryName('Pork'))}
+              href={'\\categories\\Pork'}
+            >
+              Pork
+            </NavDropdown.Item>
+
+            <NavDropdown.Item
+              onClick={() => dispatch(changeCategoryName('Miscellaneous'))}
+              href={'\\categories\\Miscellaneous'}
+            >
+              Miscellaneous
+            </NavDropdown.Item>
+            <NavDropdown.Item
+              onClick={() => dispatch(changeCategoryName('Lamb'))}
+              href={'\\categories\\Lamb'}
+            >
+              Lamb
+            </NavDropdown.Item>
+            <NavDropdown.Item
+              onClick={() => dispatch(changeCategoryName('Seafood'))}
+              href={'\\categories\\Seafood'}
+            >
+              Seafood
+            </NavDropdown.Item>
+            <NavDropdown.Item
+              onClick={() => dispatch(changeCategoryName('Side'))}
+              href={'\\categories\\Side'}
+            >
+              Side
+            </NavDropdown.Item>
+            <NavDropdown.Item
+              onClick={() => dispatch(changeCategoryName('Vegan'))}
+              href={'\\categories\\Vegan'}
+            >
+              Vegan
+            </NavDropdown.Item>
+            <NavDropdown.Item
+              onClick={() => dispatch(changeCategoryName('Vegetarian'))}
+              href={'\\categories\\Vegetarian'}
+            >
+              Vegetarian
+            </NavDropdown.Item>
+            <NavDropdown.Item
+              onClick={() => dispatch(changeCategoryName('Goat'))}
+              href={'\\categories\\Goat'}
+            >
+              Goat
             </NavDropdown.Item>
           </NavDropdown>
         </Nav>
-        <Form inline>
-          <FormControl type='text' placeholder='Search' className='mr-sm-2' />
-          <Button variant='outline-info'>Search</Button>
-        </Form>
       </Navbar.Collapse>
     </Navbar>
-  )
-}
+  );
+};
 
-export default NavigationBar
+export default NavigationBar;
