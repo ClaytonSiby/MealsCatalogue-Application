@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import {
-  Container, Row, Col, Card,
+  Container, Row, Col, Card, Button
 } from 'react-bootstrap';
 import FOODLISTDATAFETCH from '../redux/foodlist/foodlistActions';
 import LoadingComponent from './LoadingComponent';
@@ -23,7 +23,7 @@ const CategoryDetails = () => {
   }, []);
 
   return (
-    <Container>
+    <Container className="p-0 m-0">
       {!completed ? (
         <div
           className="d-flex justify-content-center align-items-center"
@@ -46,9 +46,9 @@ const CategoryDetails = () => {
                   />
                   <Card.Body className="m-0 p-1">
                     <p>{truncate(food.strMeal, 25)}</p>
-                    <button
+                    <Button
                       type="button"
-                      className="btn btn-block btn-primary"
+                      className="btn btn-block btn-info"
                       onClick={() => dispatch(changeFoodId(food.idMeal))}
                     >
                       <a
@@ -57,7 +57,7 @@ const CategoryDetails = () => {
                       >
                         Prepare Meal
                       </a>
-                    </button>
+                    </Button>
                   </Card.Body>
                 </Card>
               </Col>

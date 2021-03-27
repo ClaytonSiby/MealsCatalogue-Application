@@ -1,11 +1,14 @@
-import React, { Fragment } from 'react';
+import React from 'react';
+import { Container } from 'react-bootstrap';
 import RoutesGenerator from '../components/RoutesGenerator';
+import NavigationBar from './NavigationBar';
 
 const MainContainer = () => {
     return (
-        <Fragment>
+        <Container>
+            <NavigationBar />
             <RoutesGenerator />
-        </Fragment>
+        </Container>
     )
 }
 

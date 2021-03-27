@@ -1,7 +1,7 @@
 import { useSelector, useDispatch } from 'react-redux';
 import { useEffect, useState } from 'react';
 import {
-  Container, Row, Col, Card,
+  Container, Row, Col, Card, Button
 } from 'react-bootstrap';
 import CATEGORIESDATAFETCH from '../redux/categories/categoryActions';
 import { changeCategoryName } from '../redux/itemDetailsReducer';
@@ -56,15 +56,16 @@ function App() {
                     <Card.Title>{data.strCategory}</Card.Title>
 
                     <p>{truncate(data.strCategoryDescription, 73)}</p>
-                    <button
+                    <Button
                       type="button"
-                      className="btn btn-block btn-primary"
+                      variant='outline-info'
+                      className="btn btn-block"
                       onClick={() => changeDataName(data.strCategory)}
                     >
-                      <a href={`\\categories\\${data.strCategory}`} className="text-light">
+                      <a href={`\\categories\\${data.strCategory}`} className="text-info">
                         View Details
                       </a>
-                    </button>
+                    </Button>
                   </Card.Body>
                 </Card>
               </Col>
