@@ -7,6 +7,7 @@ import FOODLISTDATAFETCH from '../redux/foodlist/foodlistActions';
 import LoadingComponent from './LoadingComponent';
 import { changeFoodId } from '../redux/itemDetailsReducer';
 import truncate from '../helpers/truncate';
+import styles from '../assets/category.module.css';
 
 const CategoryDetails = () => {
   const dispatch = useDispatch();
@@ -53,7 +54,7 @@ const CategoryDetails = () => {
                     >
                       <a
                         href={`\\food\\${food.idMeal}`}
-                        className="text-light"
+                        className={`text-light ${styles.foodItemLink}`}
                       >
                         Prepare Meal
                       </a>
