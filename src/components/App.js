@@ -7,7 +7,7 @@ import CATEGORIESDATAFETCH from '../redux/categories/categoryActions';
 import { changeCategoryName } from '../redux/itemDetailsReducer';
 import LoadingComponent from './LoadingComponent';
 import truncate from '../helpers/truncate';
-import '../assets/App.css';
+import styles from '../assets/app.module.css';
 
 function App() {
   const dispatch = useDispatch();
@@ -62,7 +62,7 @@ function App() {
                       className="btn btn-block"
                       onClick={() => changeDataName(data.strCategory)}
                     >
-                      <a href={`\\categories\\${data.strCategory}`} className="text-info">
+                      <a href={`\\categories\\${data.strCategory}`} className={`${styles.categoryItemLink}`}>
                         View Details
                       </a>
                     </Button>
