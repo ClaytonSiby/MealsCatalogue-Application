@@ -16,7 +16,7 @@ const About = () => (
       you need &amp; their prospective measurements.
     </div>
     <div className="my-3">
-      <img style={{ width: '100%' }} alt='project gif' src={`${projectGif}`} />
+      <img style={{ width: '80%' }} alt='project gif' src={`${projectGif}`} />
     </div>
   </Container>
 )
