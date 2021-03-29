@@ -22,6 +22,8 @@ To consistently persist data across browser refreshes, the app stores the redux 
 - localStorage
 - react-router-dom
 
+## Project Presentation:
+[Video Presentation](https://www.loom.com/share/6b75af2b11894707971af14aedf96d11)
 ## Application Production Link
 [SIBYMeals](https://sibymealscatalogue.herokuapp.com/)
 
