@@ -3,7 +3,7 @@ SIBYMeals is a fully responsive web application which serves the purpose of help
 
 Users can view:
 
-- categories page => outlines a selective list of food categories,
+- categories page => outlines a list of meal categories,
 
 - food listing  => this is a page showing all meals under a certain category
 - meal details  => a single page for each food item, which provides all cooking instructions you need to successfully prepare the meal in question
