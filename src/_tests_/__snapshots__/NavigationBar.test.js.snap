@@ -1,0 +1,151 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing the MainContainer  component renders output consistently to the DOM 1`] = `
+<nav
+  className="my-3 navbar navbar-expand-lg navbar-dark bg-dark sticky-top"
+>
+  <a
+    className="text-info navbar-brand"
+    href="/"
+  >
+    SIBYMeals
+  </a>
+  <button
+    aria-controls="basic-navbar-nav"
+    aria-label="Toggle navigation"
+    className="navbar-toggler collapsed"
+    onClick={[Function]}
+    type="button"
+  >
+    <span
+      className="navbar-toggler-icon"
+    />
+  </button>
+  <div
+    aria-expanded={null}
+    className="navbar-collapse collapse"
+    id="basic-navbar-nav"
+  >
+    <div
+      className="mr-auto navbar-nav"
+      onKeyDown={[Function]}
+    >
+      <a
+        className="nav-link"
+        data-rb-event-key="\\\\categories\\\\Breakfast"
+        href="\\\\categories\\\\Breakfast"
+        onClick={[Function]}
+        onKeyDown={[Function]}
+      >
+        Breakfast
+      </a>
+      <a
+        className="nav-link"
+        data-rb-event-key="\\\\categories\\\\Dessert"
+        href="\\\\categories\\\\Dessert"
+        onClick={[Function]}
+        onKeyDown={[Function]}
+      >
+        Dessert
+      </a>
+      <a
+        className="nav-link"
+        data-rb-event-key="\\\\categories\\\\Starter"
+        href="\\\\categories\\\\Starter"
+        onClick={[Function]}
+        onKeyDown={[Function]}
+      >
+        Starter
+      </a>
+      <a
+        className="nav-link"
+        data-rb-event-key="\\\\categories\\\\Pasta"
+        href="\\\\categories\\\\Pasta"
+        onClick={[Function]}
+        onKeyDown={[Function]}
+      >
+        Pasta
+      </a>
+      <div
+        className="nav-item dropdown"
+      >
+        <a
+          aria-expanded={false}
+          aria-haspopup={true}
+          className="dropdown-toggle nav-link"
+          data-rb-event-key={null}
+          href="#"
+          id="basic-nav-dropdown"
+          onClick={[Function]}
+          onKeyDown={[Function]}
+          role="button"
+        >
+          Filter by Category
+        </a>
+      </div>
+    </div>
+    <div
+      className="navbar-nav"
+      onKeyDown={[Function]}
+    >
+      <a
+        className="nav-link"
+        data-rb-event-key="/about"
+        href="/about"
+        onClick={[Function]}
+        onKeyDown={[Function]}
+      >
+        About
+      </a>
+    </div>
+  </div>
+</nav>
+`;
+
+exports[`Tests for the App component renders output consistently to the DOM 1`] = `
+<div
+  className="container"
+>
+  <div
+    className="d-flex justify-content-center align-items-center"
+    style={
+      Object {
+        "flexDirection": "column",
+        "height": "100vh",
+      }
+    }
+  >
+    <h4>
+      ...loading
+    </h4>
+    <div
+      dangerouslySetInnerHTML={
+        Object {
+          "__html": "<svg class=\\"icon-loading\\" xmlns=\\"http://www.w3.org/2000/svg\\" viewBox=\\"0 0 32 32\\">
+  <path transform=\\"translate(-8 0)\\" d=\\"M4 12 A4 4 0 0 0 4 20 A4 4 0 0 0 4 12\\"> 
+    <animateTransform attributeName=\\"transform\\" type=\\"translate\\" values=\\"-8 0; 2 0; 2 0;\\" dur=\\"0.8s\\" repeatCount=\\"indefinite\\" begin=\\"0\\" keytimes=\\"0;.25;1\\" keySplines=\\"0.2 0.2 0.4 0.8;0.2 0.6 0.4 0.8\\" calcMode=\\"spline\\"  />
+  </path>
+  <path transform=\\"translate(2 0)\\" d=\\"M4 12 A4 4 0 0 0 4 20 A4 4 0 0 0 4 12\\"> 
+    <animateTransform attributeName=\\"transform\\" type=\\"translate\\" values=\\"2 0; 12 0; 12 0;\\" dur=\\"0.8s\\" repeatCount=\\"indefinite\\" begin=\\"0\\" keytimes=\\"0;.35;1\\" keySplines=\\"0.2 0.2 0.4 0.8;0.2 0.6 0.4 0.8\\" calcMode=\\"spline\\"  />
+  </path>
+  <path transform=\\"translate(12 0)\\" d=\\"M4 12 A4 4 0 0 0 4 20 A4 4 0 0 0 4 12\\"> 
+    <animateTransform attributeName=\\"transform\\" type=\\"translate\\" values=\\"12 0; 22 0; 22 0;\\" dur=\\"0.8s\\" repeatCount=\\"indefinite\\" begin=\\"0\\" keytimes=\\"0;.45;1\\" keySplines=\\"0.2 0.2 0.4 0.8;0.2 0.6 0.4 0.8\\" calcMode=\\"spline\\"  />
+  </path>
+  <path transform=\\"translate(24 0)\\" d=\\"M4 12 A4 4 0 0 0 4 20 A4 4 0 0 0 4 12\\"> 
+    <animateTransform attributeName=\\"transform\\" type=\\"translate\\" values=\\"22 0; 32 0; 32 0;\\" dur=\\"0.8s\\" repeatCount=\\"indefinite\\" begin=\\"0\\" keytimes=\\"0;.55;1\\" keySplines=\\"0.2 0.2 0.4 0.8;0.2 0.6 0.4 0.8\\" calcMode=\\"spline\\"  />
+  </path>
+</svg>
+",
+        }
+      }
+      style={
+        Object {
+          "fill": "#03cf4e",
+          "height": 80,
+          "width": 80,
+        }
+      }
+    />
+  </div>
+</div>
+`;
