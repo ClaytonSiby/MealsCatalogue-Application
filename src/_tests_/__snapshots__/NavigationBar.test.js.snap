@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Testing the MainContainer  component renders output consistently to the DOM 1`] = `
+exports[`Testing the NavigationBar  component renders output consistently to the DOM 1`] = `
 <nav
   className="my-3 navbar navbar-expand-lg navbar-dark bg-dark sticky-top"
 >
