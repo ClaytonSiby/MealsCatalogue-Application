@@ -1,4 +1,4 @@
-# MealsCatalogue Application
+# Meals Catalogue
 SIBYMeals is a fully responsive web application which serves the purpose of helping end users to conviniently prepare delicious meals for their families & loved ones. The app fetches its data from the [TheMealDB](https://themealdb.com/) API, which provides API endpoints for a variety number of foods. The app sends GET requests to three different endpoints based on the user's interaction with the app from the browser. To consistently persist data across browser refreshes, the app stores the redux store on the browser's localStorage to ensure that there is no data lost & increase the performance on every re-render. For online accessibility to this app, it is deployed to heroku & uses the [buildpack](https://github.com/mars/create-react-app-buildpack) for all production builds. For a quick guide on how to use the app, visit [SIBYMeals About page](https://sibymealscatalogue.herokuapp.com/About). Enjoy!
 
 ## Technologies used:
@@ -11,6 +11,7 @@ SIBYMeals is a fully responsive web application which serves the purpose of help
 - buildpack
 - heroku
 - localStorage
+- react-router-dom
 
 ## Application Production Link
 [SIBYMeals](https://sibymealscatalogue.herokuapp.com/)
