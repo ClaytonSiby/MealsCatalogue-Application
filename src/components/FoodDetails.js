@@ -69,7 +69,7 @@ const FoodDetails = ({ food, foodId, foodRequest }) => {
                           Source:
                           {' '}
                           <i>
-                            <a href={`${strItem.strSource}`} className="text-info">visit website</a>
+                            <a href={`${strItem.strSource}`} className="text-info" target="_blank">visit website</a>
                           </i>
                         </p>
                       </div>
