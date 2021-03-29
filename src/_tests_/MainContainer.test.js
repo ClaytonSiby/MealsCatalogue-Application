@@ -2,14 +2,14 @@ import React from 'react';
 import { render } from '@testing-library/react';
 import renderer from 'react-test-renderer';
 import { Provider } from 'react-redux';
+import MainContainer from '../containers/MainContainer';
 import store from './App.test';
-import FoodDetails from '../components/FoodDetails';
 
-describe('Tests for the FoodDetails component', () => {
+describe('Testing the MainContainer  component', () => {
   it('Renders successfully to the DOM', () => {
     render(
       <Provider store={store}>
-        <FoodDetails />
+        <MainContainer />
       </Provider>,
     );
   });
@@ -18,7 +18,7 @@ describe('Tests for the FoodDetails component', () => {
     const test = renderer
       .create(
         <Provider store={store}>
-          <FoodDetails />
+          <MainContainer />
         </Provider>,
       )
       .toJSON();

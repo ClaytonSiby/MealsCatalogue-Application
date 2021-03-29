@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Testing the About component renders output consistently to the DOM 1`] = `
+exports[`Testing the LoadingComponent renders output consistently to the DOM 1`] = `
 <div
   dangerouslySetInnerHTML={
     Object {

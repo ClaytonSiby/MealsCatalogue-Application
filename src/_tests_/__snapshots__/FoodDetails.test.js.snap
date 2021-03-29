@@ -48,7 +48,7 @@ exports[`Tests for the App component renders output consistently to the DOM 1`] 
 </div>
 `;
 
-exports[`Tests for the App component renders output consistently to the DOM 2`] = `
+exports[`Tests for the FoodDetails component renders output consistently to the DOM 1`] = `
 <div
   className="container-fluid"
 >
