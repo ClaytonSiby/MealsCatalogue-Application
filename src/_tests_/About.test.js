@@ -3,7 +3,7 @@ import { render } from '@testing-library/react';
 import renderer from 'react-test-renderer';
 import About from '../components/About';
 
-describe('With React Testing Library', () => {
+describe('Testing the About component', () => {
   it('Renders successfully to the DOM', () => {
     render(<About />);
   });

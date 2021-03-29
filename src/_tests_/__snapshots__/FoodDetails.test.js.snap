@@ -1,0 +1,100 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tests for the App component renders output consistently to the DOM 1`] = `
+<div
+  className="container"
+>
+  <div
+    className="d-flex justify-content-center align-items-center"
+    style={
+      Object {
+        "flexDirection": "column",
+        "height": "100vh",
+      }
+    }
+  >
+    <h4>
+      ...loading
+    </h4>
+    <div
+      dangerouslySetInnerHTML={
+        Object {
+          "__html": "<svg class=\\"icon-loading\\" xmlns=\\"http://www.w3.org/2000/svg\\" viewBox=\\"0 0 32 32\\">
+  <path transform=\\"translate(-8 0)\\" d=\\"M4 12 A4 4 0 0 0 4 20 A4 4 0 0 0 4 12\\"> 
+    <animateTransform attributeName=\\"transform\\" type=\\"translate\\" values=\\"-8 0; 2 0; 2 0;\\" dur=\\"0.8s\\" repeatCount=\\"indefinite\\" begin=\\"0\\" keytimes=\\"0;.25;1\\" keySplines=\\"0.2 0.2 0.4 0.8;0.2 0.6 0.4 0.8\\" calcMode=\\"spline\\"  />
+  </path>
+  <path transform=\\"translate(2 0)\\" d=\\"M4 12 A4 4 0 0 0 4 20 A4 4 0 0 0 4 12\\"> 
+    <animateTransform attributeName=\\"transform\\" type=\\"translate\\" values=\\"2 0; 12 0; 12 0;\\" dur=\\"0.8s\\" repeatCount=\\"indefinite\\" begin=\\"0\\" keytimes=\\"0;.35;1\\" keySplines=\\"0.2 0.2 0.4 0.8;0.2 0.6 0.4 0.8\\" calcMode=\\"spline\\"  />
+  </path>
+  <path transform=\\"translate(12 0)\\" d=\\"M4 12 A4 4 0 0 0 4 20 A4 4 0 0 0 4 12\\"> 
+    <animateTransform attributeName=\\"transform\\" type=\\"translate\\" values=\\"12 0; 22 0; 22 0;\\" dur=\\"0.8s\\" repeatCount=\\"indefinite\\" begin=\\"0\\" keytimes=\\"0;.45;1\\" keySplines=\\"0.2 0.2 0.4 0.8;0.2 0.6 0.4 0.8\\" calcMode=\\"spline\\"  />
+  </path>
+  <path transform=\\"translate(24 0)\\" d=\\"M4 12 A4 4 0 0 0 4 20 A4 4 0 0 0 4 12\\"> 
+    <animateTransform attributeName=\\"transform\\" type=\\"translate\\" values=\\"22 0; 32 0; 32 0;\\" dur=\\"0.8s\\" repeatCount=\\"indefinite\\" begin=\\"0\\" keytimes=\\"0;.55;1\\" keySplines=\\"0.2 0.2 0.4 0.8;0.2 0.6 0.4 0.8\\" calcMode=\\"spline\\"  />
+  </path>
+</svg>
+",
+        }
+      }
+      style={
+        Object {
+          "fill": "#03cf4e",
+          "height": 80,
+          "width": 80,
+        }
+      }
+    />
+  </div>
+</div>
+`;
+
+exports[`Tests for the App component renders output consistently to the DOM 2`] = `
+<div
+  className="container-fluid"
+>
+  <div
+    className="d-flex justify-content-center align-items-center"
+    style={
+      Object {
+        "flexDirection": "column",
+        "height": "100vh",
+      }
+    }
+  >
+    <h4>
+      ...loading
+    </h4>
+    <div
+      dangerouslySetInnerHTML={
+        Object {
+          "__html": "<svg xmlns=\\"http://www.w3.org/2000/svg\\" viewBox=\\"0 0 32 32\\">
+  <path transform=\\"translate(2)\\" d=\\"M0 12 V20 H4 V12z\\"> 
+    <animate attributeName=\\"d\\" values=\\"M0 12 V20 H4 V12z; M0 4 V28 H4 V4z; M0 12 V20 H4 V12z; M0 12 V20 H4 V12z\\" dur=\\"1.2s\\" repeatCount=\\"indefinite\\" begin=\\"0\\" keytimes=\\"0;.2;.5;1\\" keySplines=\\"0.2 0.2 0.4 0.8;0.2 0.6 0.4 0.8;0.2 0.8 0.4 0.8\\" calcMode=\\"spline\\"  />
+  </path>
+  <path transform=\\"translate(8)\\" d=\\"M0 12 V20 H4 V12z\\">
+    <animate attributeName=\\"d\\" values=\\"M0 12 V20 H4 V12z; M0 4 V28 H4 V4z; M0 12 V20 H4 V12z; M0 12 V20 H4 V12z\\" dur=\\"1.2s\\" repeatCount=\\"indefinite\\" begin=\\"0.2\\" keytimes=\\"0;.2;.5;1\\" keySplines=\\"0.2 0.2 0.4 0.8;0.2 0.6 0.4 0.8;0.2 0.8 0.4 0.8\\" calcMode=\\"spline\\"  />
+  </path>
+  <path transform=\\"translate(14)\\" d=\\"M0 12 V20 H4 V12z\\">
+    <animate attributeName=\\"d\\" values=\\"M0 12 V20 H4 V12z; M0 4 V28 H4 V4z; M0 12 V20 H4 V12z; M0 12 V20 H4 V12z\\" dur=\\"1.2s\\" repeatCount=\\"indefinite\\" begin=\\"0.4\\" keytimes=\\"0;.2;.5;1\\" keySplines=\\"0.2 0.2 0.4 0.8;0.2 0.6 0.4 0.8;0.2 0.8 0.4 0.8\\" calcMode=\\"spline\\" />
+  </path>
+  <path transform=\\"translate(20)\\" d=\\"M0 12 V20 H4 V12z\\">
+    <animate attributeName=\\"d\\" values=\\"M0 12 V20 H4 V12z; M0 4 V28 H4 V4z; M0 12 V20 H4 V12z; M0 12 V20 H4 V12z\\" dur=\\"1.2s\\" repeatCount=\\"indefinite\\" begin=\\"0.6\\" keytimes=\\"0;.2;.5;1\\" keySplines=\\"0.2 0.2 0.4 0.8;0.2 0.6 0.4 0.8;0.2 0.8 0.4 0.8\\" calcMode=\\"spline\\" />
+  </path>
+  <path transform=\\"translate(26)\\" d=\\"M0 12 V20 H4 V12z\\">
+    <animate attributeName=\\"d\\" values=\\"M0 12 V20 H4 V12z; M0 4 V28 H4 V4z; M0 12 V20 H4 V12z; M0 12 V20 H4 V12z\\" dur=\\"1.2s\\" repeatCount=\\"indefinite\\" begin=\\"0.8\\" keytimes=\\"0;.2;.5;1\\" keySplines=\\"0.2 0.2 0.4 0.8;0.2 0.6 0.4 0.8;0.2 0.8 0.4 0.8\\" calcMode=\\"spline\\" />
+  </path>
+</svg>
+",
+        }
+      }
+      style={
+        Object {
+          "fill": "#03cf4e",
+          "height": 80,
+          "width": 80,
+        }
+      }
+    />
+  </div>
+</div>
+`;

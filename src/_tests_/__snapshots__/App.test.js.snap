@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`With React Testing Library renders output consistently to the DOM 1`] = `
+exports[`Tests for the App component renders output consistently to the DOM 1`] = `
 <div
   className="container"
 >
