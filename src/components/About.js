@@ -1,7 +1,7 @@
-import React from 'react'
-import { Container } from 'react-bootstrap'
-import projectGif from '../assets/demo/projectGif.gif'
-import styles from '../assets/about.module.css'
+import React from 'react';
+import { Container } from 'react-bootstrap';
+import projectGif from '../assets/demo/projectGif.gif';
+import styles from '../assets/about.module.css';
 
 const About = () => (
   <Container className={`${styles.aboutContainer} px-3`}>
@@ -17,18 +17,19 @@ const About = () => (
       &amp; a source link which gives you more information on the ingredients
       you need &amp; their prospective measurements.
     </div>
-    <div className='my-3'>
-      <img style={{ width: '80%' }} alt='project gif' src={`${projectGif}`} />
+    <div className="my-3">
+      <img style={{ width: '80%' }} alt="project gif" src={`${projectGif}`} />
     </div>
 
     <p className={`my-4 ${styles.copyright}`}>
-      Designed and developed by:{' '}
-      <a href='https://github.com/ClaytonSiby' target='_blank'>
+      Designed and developed by:
+      {' '}
+      <a href="https://github.com/ClaytonSiby" target="_blank" rel="noreferrer">
         <i>Clayton Siby</i>
       </a>
       &nbsp; &copy; copyright 2021
     </p>
   </Container>
-)
+);
 
-export default About
+export default About;
