@@ -1,70 +1,56 @@
-# Getting Started with Create React App
+# MealsCatalogue Application
+SIBYMeals is a fully responsive web application which serves the purpose of helping end users to conviniently prepare delicious meals for their families & loved ones. The app fetches its data from the [TheMealDB](https://themealdb.com/) API, which provides API endpoints for a variety number of foods. The app sends GET requests to three different endpoints based on the user's interaction with the app from the browser. To consistently persist data across browser refreshes, the app stores the redux store on the browser's localStorage to ensure that there is no data lost & increase the performance on every re-render. For online accessibility to this app, it is deployed to heroku & uses the [buildpack](https://github.com/mars/create-react-app-buildpack) for all production builds. For a quick guide on how to use the app, visit [SIBYMeals About page](https://sibymealscatalogue.herokuapp.com/About). Enjoy!
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Technologies used:
+> technologies used in building this project include but are not limited to: 
+- reactJS/Redux
+- EcmaScript 6
+- Bootstrap
+- react-test-renderer
+- react-testing-library
+- buildpack
+- heroku
+- localStorage
 
-## Available Scripts
+## Application Production Link
+[SIBYMeals](https://sibymealscatalogue.herokuapp.com/)
 
-In the project directory, you can run:
+## Project Design
+![MealsCatalogue](./src/assets/demo/projectGif.gif)
 
-### `yarn start`
+## Project SetUp
+You can clone the project on your local machine by running:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- `git clone https://github.com/ClaytonSiby/MealsCatalogue-Application.git`
+then:
+-  `cd The_Calculator`
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### install all dependencies by running:
+- `yarn install`
 
-### `yarn test`
+- you can view the project live by runnig `yarn start`
+- for production release/deployment run `yarn build` to bundle a minified version of the code.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Author 
 
-### `yarn build`
+👤 **Clayton Siby**
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Github: [@ClaytonSiby](https://github.com/ClaytonSiby)
+   
+- Linkedin: [Linkedin Profile](https://www.linkedin.com/in/clayton-siby-48a8a0183/)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Twitter: [@Twitter](https://twitter.com/ClaytonSiby)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## :handshake: Contributing 
 
-### `yarn eject`
+* Contributions, issues and feature requests are welcome! Feel free to check the [issues page](https://github.com/ClaytonSiby/MealsCatalogue-Application/issues)
+- To contribute to this project:
+- Fork this repository & clone locally.
+- Create an upstream remote and sync your local copy.
+- Create a new branch.
+- Push your code to your origin repository.
+- Create a new Pull Request .
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Show your support
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Give a ⭐️ if you like this project!
