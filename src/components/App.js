@@ -5,7 +5,7 @@ import {
 } from 'react-bootstrap';
 import CATEGORIESDATAFETCH from '../redux/categories/categoryActions';
 import { changeCategoryName } from '../redux/itemDetailsReducer';
-import LoadingComponent from './LoadingComponent';
+import LoadingComponent from '../Pages/LoadingComponent';
 import truncate from '../helpers/truncate';
 import styles from '../assets/app.module.css';
 

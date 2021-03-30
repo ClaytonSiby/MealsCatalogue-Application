@@ -4,7 +4,7 @@ import {
   Container, Row, Col, Card, Button,
 } from 'react-bootstrap';
 import FOODLISTDATAFETCH from '../redux/foodlist/foodlistActions';
-import LoadingComponent from './LoadingComponent';
+import LoadingComponent from '../Pages/LoadingComponent';
 import { changeFoodId } from '../redux/itemDetailsReducer';
 import truncate from '../helpers/truncate';
 import styles from '../assets/category.module.css';

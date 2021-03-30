@@ -5,7 +5,7 @@ import {
   Container, Row, Col,
 } from 'react-bootstrap';
 import FOODDATAFETCH from '../redux/food/foodActions';
-import LoadingComponent from './LoadingComponent';
+import LoadingComponent from '../Pages/LoadingComponent';
 
 const FoodDetails = ({ food, foodId, foodRequest }) => {
   const [doneLoading, setDoneLoading] = useState(false);
