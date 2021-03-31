@@ -1,0 +1,8 @@
+.categoryItemLink {
+  color: #0f646d;
+}
+
+.categoryItemLink:hover {
+  color: #fff;
+  text-decoration: none;
+}

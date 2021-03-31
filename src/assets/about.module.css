@@ -1,0 +1,11 @@
+.aboutContainer {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  margin: 3rem auto;
+  text-align: center;
+}
+
+.copyright {
+  font-size: 0.9rem;
+}
