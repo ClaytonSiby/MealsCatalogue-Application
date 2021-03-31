@@ -1,7 +1,6 @@
 import { createStore, applyMiddleware } from 'redux';
 import { composeWithDevTools } from 'redux-devtools-extension';
 import thunk from 'redux-thunk';
-import logger from 'redux-logger';
 import rootReducer from './rootReducer';
 
 const saveToLocalStorage = (state) => {
@@ -25,7 +24,7 @@ const loadAppData = () => {
 
 const store = createStore(
   rootReducer, loadAppData(),
-  composeWithDevTools(applyMiddleware(thunk, logger)),
+  composeWithDevTools(applyMiddleware(thunk)),
 );
 
 store.subscribe(() => saveToLocalStorage(store.getState()));
