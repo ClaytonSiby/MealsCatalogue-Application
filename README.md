@@ -40,6 +40,7 @@ then:
 ### install all dependencies by running:
 - `yarn install`
 
+- you can run all tests for this project using `yarn test` from the command line.
 - you can view the project live by runnig `yarn start`
 - for production release/deployment run `yarn build` to bundle a minified version of the code.
 
